@@ -70,6 +70,55 @@ class Order(BaseModel):
     status: str = Field("pending", description="pending|paid|shipped|cancelled|refunded")
 
 
+class Coupon(BaseModel):
+    """
+    Coupons collection schema
+    Collection: "coupon"
+    """
+    tenant_id: str = Field(..., description="Owning tenant id")
+    code: str = Field(..., description="Human-entered code")
+    percent_off: Optional[float] = Field(None, ge=0, le=100)
+    amount_off: Optional[float] = Field(None, ge=0)
+    active: bool = Field(True)
+    max_redemptions: Optional[int] = Field(None, ge=1)
+    times_redeemed: int = Field(0, ge=0)
+
+
+class AdminUser(BaseModel):
+    """
+    Admin users for a tenant
+    Collection: "adminuser"
+    """
+    tenant_id: str
+    email: str
+    password_hash: str
+    role: str = Field("owner", description="owner|staff")
+
+
+class Webhook(BaseModel):
+    """
+    Registered webhook endpoints for a tenant
+    Collection: "webhook"
+    """
+    tenant_id: str
+    url: str
+    events: List[str] = Field(default_factory=list)
+    active: bool = Field(True)
+
+
+class ThemeSettings(BaseModel):
+    """
+    Storefront theme settings per tenant
+    Collection: "themesettings"
+    """
+    tenant_id: str
+    primary_color: str = "#34d399"
+    hero_heading: str = "Shop smart. Save more."
+    hero_subtext: str = "Daily deals across every category."
+    logo_url: Optional[str] = None
+    featured_categories: List[str] = []
+
+
 # Note for the platform:
 # 1) The database viewer can read these schemas from GET /schema
 # 2) Each model aligns to a MongoDB collection with the lowercased class name

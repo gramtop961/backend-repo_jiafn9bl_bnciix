@@ -1,15 +1,46 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [182] using StatReload
-INFO:     Started server process [184]
+INFO:     Started reloader process [279] using StatReload
+INFO:     Started server process [281]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:55804 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:55814 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55814 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55814 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55814 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:51632 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:51632 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:51632 - "GET /api/tenants HTTP/1.1" 200 OK
-INFO:     172.20.0.1:51632 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39956 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:39970 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39970 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39970 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39970 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39984 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39986 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39986 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39984 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40000 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40000 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40000 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40000 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51260 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51256 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51260 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51256 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/theme?tenant_id=691c6028ac269f107593d580 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/products?tenant_id=691c6028ac269f107593d580 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39190 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39190 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51276 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:39190 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47384 - "GET /test HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47384 - "GET /test HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47384 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47392 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47384 - "GET /api/theme?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47392 - "GET /api/products?tenant_id=691c601fac269f107593d57e HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47392 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47392 - "GET /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:41050 - "OPTIONS /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:41050 - "POST /api/tenants HTTP/1.1" 200 OK
+INFO:     172.20.0.1:41050 - "POST /api/tenants HTTP/1.1" 200 OK
